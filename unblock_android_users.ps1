@@ -9,7 +9,6 @@ foreach ($serverName in $serverNames) {
 
         if (Get-NetFirewallRule -DisplayName $ruleName -ErrorAction SilentlyContinue) {
             $firewallRule = Get-NetFirewallRule -DisplayName $ruleName -ErrorAction SilentlyContinue
-            Write-Host $serverName":"
 
             if ($firewallRule.Enabled -eq 'True') {
                 # Выключение правила, если оно включено
