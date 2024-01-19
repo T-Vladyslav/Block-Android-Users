@@ -1,5 +1,5 @@
 $serverNames = 'wmstest-arr01','wmstest-arr02'
-$tsdNetwork = '192.168.72.0/23'
+$tsdNetwork = '192.168.72.0/23' , '192.168.74.0/23'
 $ruleName = 'Block Android Users'
 
 foreach ($serverName in $serverNames) {  
